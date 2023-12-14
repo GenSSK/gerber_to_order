@@ -171,6 +171,10 @@ def makeDir(dirPath, retryRemainingCount = retryCount):
         time.sleep(retryWaitSecond)
         retryRemainingCount -= 1
 
+    # my addition
+    with open(dirPath + '/请不要加生产标识.txt', 'w'):
+        pass
+
 
 def plotLayers(
         board,
